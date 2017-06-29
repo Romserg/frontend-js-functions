@@ -7,12 +7,11 @@
  			if (typeof Array[i] == 'number'){
    				if (minEl===undefined ){
      			minEl = Array[i];
-    			 continue;
+    			continue;
    				}
-   			if(minEl>=Array[i]){
-    		console.log(minEl)
-  			minEl=Array[i];}
-  			}
+   				if(minEl>=Array[i]){   		
+  				minEl=Array[i];}
+  				}
 			
 		}
 		return minEl;
@@ -27,7 +26,7 @@ function max(Array){
 		for(var i=0;i<Array.length;i++){
 			if(Array[i]>=maxEl)
 			maxEl=Array[i]
-		}
+			}
 		return maxEl;
 	}
 }
