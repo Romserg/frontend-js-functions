@@ -1,16 +1,16 @@
-﻿function min(Array){
-	if(Array===undefined){
+﻿function min(Arr){
+	if(Arr===undefined){
 	return;
 	} else {
 		var minEl;
-		for(var i=0;i<Array.length;i++){
- 			if (typeof Array[i] == 'number'){
+		for(var i=0;i<Arr.length;i++){
+ 			if (typeof Arr[i] == 'number'){
    				if (minEl===undefined ){
-     			minEl = Array[i];
+     			minEl = Arr[i];
     			continue;
    				}
-   				if(minEl>=Array[i]){   		
-  				minEl=Array[i];}
+   				if(minEl>=Arr[i]){   		
+  				minEl=Arr[i];}
   				}
 			
 		}
@@ -18,14 +18,14 @@
 	}
 }
 
-function max(Array){
-	if(Array===undefined){
+function max(Arr){
+	if(Arr===undefined){
 	return;
 	} else {
-		var maxEl=Array[0];
-		for(var i=0;i<Array.length;i++){
-			if(Array[i]>=maxEl)
-			maxEl=Array[i]
+		var maxEl=Arr[0];
+		for(var i=0;i<Arr.length;i++){
+			if(Arr[i]>=maxEl)
+			maxEl=Arr[i]
 			}
 		return maxEl;
 	}
